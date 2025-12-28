@@ -1,0 +1,40 @@
+---
+// Footer component
+const currentYear = new Date().getFullYear()
+---
+
+<footer class="py-8 px-4 sm:px-6 lg:px-8 border-t border-border">
+  <div class="max-w-6xl mx-auto">
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-fg-tertiary">
+      <!-- Copyright -->
+      <div>
+        &copy; {currentYear} Christophe Bouriel
+      </div>
+
+      <!-- Links -->
+      <div class="flex items-center gap-6">
+        <a
+          href="https://github.com/ChristopheBouriel"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:text-fg-secondary transition-colors"
+        >
+          GitHub
+        </a>
+        <a
+          href="https://www.linkedin.com/in/christophe-bouriel/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hover:text-fg-secondary transition-colors"
+        >
+          LinkedIn
+        </a>
+      </div>
+
+      <!-- Made with -->
+      <div>
+        Made with <span class="text-error">&hearts;</span> in Laos
+      </div>
+    </div>
+  </div>
+</footer>

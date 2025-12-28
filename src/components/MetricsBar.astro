@@ -1,0 +1,29 @@
+---
+// Metrics bar showing key project statistics
+const metrics = [
+  { number: "2,000+", label: "Automated Tests" },
+  { number: "84%", label: "Backend Coverage" },
+  { number: "Production", label: "Ready" },
+  { number: "3+", label: "Years Experience" },
+]
+---
+
+<section class="py-12 px-4 sm:px-6 lg:px-8 border-y border-border bg-bg-secondary/50">
+  <div class="max-w-6xl mx-auto">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+      {metrics.map((metric, index) => (
+        <div
+          class="text-center"
+          style={`animation: slide-up 0.5s ease-out ${index * 100}ms backwards;`}
+        >
+          <div class="font-mono text-3xl sm:text-4xl font-bold text-accent mb-2">
+            {metric.number}
+          </div>
+          <div class="text-fg-secondary text-sm sm:text-base">
+            {metric.label}
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
