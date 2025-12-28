@@ -1,0 +1,100 @@
+---
+// src/components/Journey.astro
+// The Journey section - showing the development process of RestOh
+---
+
+<section id="journey" class="py-20 bg-bg-secondary">
+  <div class="container mx-auto px-6 max-w-5xl">
+
+    <h2 class="text-3xl md:text-4xl font-serif text-center mb-4">
+      The Journey
+    </h2>
+    <p class="text-fg-secondary text-center mb-16 max-w-2xl mx-auto">
+      RestOh wasn't built in a day. It evolved through a deliberate, professional process.
+    </p>
+
+    <!-- Timeline -->
+    <div class="relative">
+      <!-- Vertical line -->
+      <div class="absolute left-8 md:left-1/2 top-0 bottom-0 w-px bg-border"></div>
+
+      <!-- Phase 1: Study -->
+      <div class="relative flex flex-col md:flex-row items-start mb-16">
+        <div class="flex items-center justify-center w-16 h-16 rounded-full bg-bg-tertiary border border-border z-10 md:absolute md:left-1/2 md:-translate-x-1/2">
+          <span class="text-2xl">📚</span>
+        </div>
+        <div class="md:w-1/2 md:pr-16 md:text-right mt-4 md:mt-0 ml-20 md:ml-0">
+          <h3 class="text-xl font-semibold text-accent mb-2">Phase 1: Study</h3>
+          <p class="text-fg-secondary">
+            Starting point: an open-source Node.js backend. Interesting concept, but incomplete.
+            I studied its architecture, identified what worked, what didn't, and what was missing.
+          </p>
+        </div>
+      </div>
+
+      <!-- Phase 2: Prototype -->
+      <div class="relative flex flex-col md:flex-row items-start mb-16">
+        <div class="flex items-center justify-center w-16 h-16 rounded-full bg-bg-tertiary border border-border z-10 md:absolute md:left-1/2 md:-translate-x-1/2">
+          <span class="text-2xl">🎨</span>
+        </div>
+        <div class="md:w-1/2 md:pl-16 md:ml-auto mt-4 md:mt-0 ml-20 md:ml-0">
+          <h3 class="text-xl font-semibold text-accent mb-2">Phase 2: Prototype</h3>
+          <p class="text-fg-secondary mb-4">
+            A full React frontend simulating every feature — menu, cart, interactive table reservations, admin dashboard.
+            No backend yet, but the complete UX of the final product.
+          </p>
+          <a href="https://cb-restoh-flyer.pages.dev/"
+             target="_blank"
+             rel="noopener noreferrer"
+             class="inline-flex items-center text-accent hover:text-accent-hover transition-colors">
+            Explore the Prototype
+            <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Phase 3: MVP -->
+      <div class="relative flex flex-col md:flex-row items-start">
+        <div class="flex items-center justify-center w-16 h-16 rounded-full bg-accent/20 border-2 border-accent z-10 md:absolute md:left-1/2 md:-translate-x-1/2">
+          <span class="text-2xl">🚀</span>
+        </div>
+        <div class="md:w-1/2 md:pr-16 md:text-right mt-4 md:mt-0 ml-20 md:ml-0">
+          <h3 class="text-xl font-semibold text-accent mb-2">Phase 3: Production MVP</h3>
+          <p class="text-fg-secondary mb-4">
+            Backend rebuilt from scratch with security-first architecture.
+            Every feature refined, tested, and production-ready.
+          </p>
+          <ul class="text-fg-secondary text-sm space-y-1 mb-4 md:text-right">
+            <li>✓ OWASP-compliant security</li>
+            <li>✓ 2,000+ automated tests</li>
+            <li>✓ 84% backend coverage</li>
+            <li>✓ Docker + CI/CD ready</li>
+          </ul>
+          <div class="flex flex-col sm:flex-row gap-3 md:justify-end">
+            <a href="#"
+               class="inline-flex items-center justify-center px-4 py-2 bg-accent text-bg-primary font-medium rounded-lg hover:bg-accent-hover transition-colors opacity-50 cursor-not-allowed"
+               aria-disabled="true">
+              Try Live Demo
+              <span class="ml-2 text-xs">(Coming Soon)</span>
+            </a>
+            <a href="https://github.com/ChristopheBouriel"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="inline-flex items-center justify-center px-4 py-2 border border-border rounded-lg hover:border-accent hover:text-accent transition-colors">
+              View Code
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Quote -->
+    <p class="text-fg-tertiary text-center mt-16 italic max-w-xl mx-auto">
+      "Sometimes the best way to build something solid is to start with something imperfect — and transform it, one test at a time."
+    </p>
+
+  </div>
+</section>
