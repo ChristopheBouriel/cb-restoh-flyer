@@ -40,10 +40,10 @@
         <div class="md:w-1/2 md:pl-16 md:ml-auto mt-4 md:mt-0 ml-20 md:ml-0">
           <h3 class="text-xl font-semibold text-accent mb-2">Phase 2: Prototype</h3>
           <p class="text-fg-secondary mb-4">
-            A full React frontend simulating every feature — menu, cart, interactive table reservations, admin dashboard.
+            A full React frontend simulating most of the features — menu, cart, table reservations, contact, admin dashboard.
             No backend yet, but the complete UX of the final product.
           </p>
-          <a href="https://cb-restoh-flyer.pages.dev/"
+          <a href="https://restoh-front.pages.dev"
              target="_blank"
              rel="noopener noreferrer"
              class="inline-flex items-center text-accent hover:text-accent-hover transition-colors">
@@ -52,9 +52,6 @@
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
             </svg>
           </a>
-          <span class="block text-xs text-foreground-tertiary mt-1">
-            💻 Strongly recommended to experience on desktop
-          </span>
         </div>
       </div>
 
@@ -67,7 +64,8 @@
           <h3 class="text-xl font-semibold text-accent mb-2">Phase 3: Production MVP</h3>
           <p class="text-fg-secondary mb-4">
             Backend rebuilt from scratch with security-first architecture.
-            Every feature refined, tested, and production-ready.
+            Every present feature refined, some added like the interactive floor plan for table booking, real time stats for the admin, reviews system...
+            Tested, and production-ready.
           </p>
           <ul class="text-fg-secondary text-sm space-y-1 mb-4 md:text-right">
             <li>✓ OWASP-compliant security</li>
@@ -75,19 +73,26 @@
             <li>✓ 84% backend coverage</li>
             <li>✓ Docker + CI/CD ready</li>
           </ul>
-          <div class="flex flex-col sm:flex-row gap-3 md:justify-end">
-            <a href="#"
-               class="inline-flex items-center justify-center px-4 py-2 bg-accent text-bg-primary font-medium rounded-lg hover:bg-accent-hover transition-colors opacity-50 cursor-not-allowed"
-               aria-disabled="true">
-              Try Live Demo
-              <span class="ml-2 text-xs">(Coming Soon)</span>
-            </a>
-            <a href="https://github.com/ChristopheBouriel"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="inline-flex items-center justify-center px-4 py-2 border border-border rounded-lg hover:border-accent hover:text-accent transition-colors">
-              View Code
-            </a>
+          <div class="flex flex-col gap-4">
+            <div class="flex flex-col sm:flex-row gap-3 md:justify-end">
+              <a href="https://restoh-frontend.pages.dev"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="inline-flex items-center justify-center px-4 py-2 bg-accent text-bg-primary font-medium rounded-lg hover:bg-accent-hover transition-colors">
+                Try Live Demo
+              </a>
+              <a href="https://github.com/ChristopheBouriel"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 class="inline-flex items-center justify-center px-4 py-2 border border-accent text-accent rounded-lg hover:bg-accent hover:text-bg-primary transition-colors">
+                View Code
+              </a>
+            </div>
+            <p class="text-xs md:text-right leading-relaxed">
+              <span class="text-accent/70">Please allow 30-60 seconds on first visit.</span><br />
+              <span class="text-accent/50">Free-tier server needs to wake up.</span><br />
+              <span class="text-accent/50">Menu images loading = ready to go!</span>
+            </p>
           </div>
         </div>
       </div>
